@@ -1,24 +1,33 @@
 {
     "name": "web_product_catalog",
+
     "type": "module",
     "version": "1.0.0",
     "description": "ALX webstack final project",
     "main": "index.js",
+ 
     "scripts": {
         "lint": "./node_modules/.bin/eslint",
         "check-lint": "lint [0-9]*.js",
-        "start-server": "nodemon --exec babel-node --presets @babel/preset-env ./server.js"
+        "dev": "nodemon --exec babel-node --presets @babel/preset-env ./server.js",
+        "start":"node ./server.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "cors": "^2.8.5",
         "express": "^4.18.2",
         "sha1": "^1.1.1",
         "uuid": "^9.0.0"
     },
     "devDependencies": {
+
         "@babel/cli": "^7.8.0",
         "@babel/preset-env": "^7.8.2",
+        "@babel/cli": "^7.22.15",
+        "@babel/core": "^7.22.19",
+        "@babel/node": "^7.22.19",
+        "@babel/preset-env": "^7.22.15",
         "eslint": "^6.4.0",
         "eslint-config-airbnb-base": "^14.0.0",
         "eslint-plugin-import": "^2.18.2",
