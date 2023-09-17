@@ -1,18 +1,14 @@
+
 import { Router } from 'express';
 
-// const router = Router();
+import express from 'express'
 
-/**
- * v1 routes
- */
+const router = express.Router();
+
+import ProductController from '../controllers/ProductController.js';
+
+
+router.get('', ProductController.home);
 
 // module.exports = router;
-
-export function router() {
-    // Your router function code goes here
-    
-
-
-
-  }
-
+export default router;
