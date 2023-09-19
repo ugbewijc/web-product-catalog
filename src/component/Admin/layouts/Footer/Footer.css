@@ -262,23 +262,15 @@
     .foot_copyright a:hover{
         color: #f00;
     }
-     .facebook_icon {
+     .github_icon {
      
       font-size: 18px;
      }
     
-    .facebook_icon:hover{
-      color: #3b5998 ;
-    }
-    .twitter_icon {
-     
-      font-size: 18px;
-    
+    .github_icon:hover{
+      color: #000 ;
     }
     
-    .twitter_icon:hover{
-      color: #1DA1F2 ;
-    }
     .insta_icon {
      
       font-size: 18px;

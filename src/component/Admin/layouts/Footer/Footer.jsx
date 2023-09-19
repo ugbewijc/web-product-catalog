@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import GithubIcon from "@mui/icons-material/Github";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GooglePlay from "../../../Image/Footer/google-play-black.svg";
-import AppStore from "../../../Image/Footer/app-store-black.svg";
+import GooglePlay from "../../images/google-play-black.svg";
+import AppStore from "../../images/app-store-black.svg";
 import "./Footer.css";
 const footMenu = [
   {
@@ -107,23 +106,21 @@ const footMenu = [
  const footSocial = [
    {
      id: 1,
-     icon: <FacebookIcon className="facebook_icon" fontSize="large" />,
-     path: "https://www.instagram.com/iam_nightbot/",
+     icon: <GithubIcon className="github_icon" fontSize="large" />,
+     path: "https://github.com/ugbewijc/web-product-catalog",
    },
    {
-     id: 2,
-     icon: <TwitterIcon className="twitter_icon" fontSize="large" />,
-     path: "https://twitter.com/Iam_DEv22",
+     
    },
    {
      id: 3,
      icon: <InstagramIcon className="insta_icon" fontSize="large" />,
-     path: "https://www.instagram.com/cricket_weapon_store17",
+     path: "https://www.instagram.com/love_grootboom/",
    },
    {
      id: 4,
      icon: <LinkedInIcon className="likedin_icon" fontSize="large" />,
-     path: "https://www.linkedin.com/in/iam-devesh/",
+     path: "https://www.linkedin.com/in/Lerato-M/",
    },
  ];
 
@@ -135,7 +132,7 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubValue("");
-    alert("Thankyou, you are subscribed to receive our daily newsletter");
+    alert("Thank you, you are subscribed to receive our daily newsletter");
   };
 
   const currYear = new Date().getFullYear();
@@ -157,7 +154,7 @@ const Footer = () => {
               </div>
 
               <div className="foot_subs">
-                <h5>Newslatter</h5>
+                <h5>Newsletter</h5>
                 <form onSubmit={handleSubmit} className="foot_form">
                   <input
                     type="email"
@@ -267,7 +264,7 @@ const Footer = () => {
                 <p>
                   &copy; {currYear} | Cricket weapon, All Rights Reserved.
                   <span>
-                    <a href="iam-devesh.tech"> | Built by ALX</a>
+                    <a href="iam-devesh.tech"> | Built by ALX-devs</a>
                   </span>
                 </p>
               </div>
