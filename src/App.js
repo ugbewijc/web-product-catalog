@@ -11,7 +11,6 @@ import PrivateRoute from "./component/Route/PrivateRoute";
 import "./App.css";
 
 import Header from "./component/layouts/Header1.jsx/Header";
-import Payment from "./component/Cart/Payment";
 import Home from "./component/Home/Home";
 import Services from "./Terms&Condtions/Service";
 import Footer from "./component/layouts/Footer/Footer";
