@@ -7,7 +7,7 @@
     "scripts": {
         "lint": "./node_modules/.bin/eslint",
         "check-lint": "lint [0-9]*.js",
-        "dev": "nodemon --exec babel-node --presets @babel/preset-env ./server.js",
+        "dev": "nodemon -r dotenv/config --exec babel-node --presets @babel/preset-env ./server.js",
         "start": "node ./server.js"
     },
     "author": "",
@@ -25,6 +25,7 @@
         "@babel/core": "^7.22.19",
         "@babel/node": "^7.22.19",
         "@babel/preset-env": "^7.22.15",
+        "dotenv": "^16.3.1",
         "eslint": "^6.4.0",
         "eslint-config-airbnb-base": "^14.0.0",
         "eslint-plugin-import": "^2.18.2",
