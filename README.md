@@ -1,11 +1,3 @@
-<a name="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <div align="center">
    <h3 align="center">Web Product Catalog</h3>
       <p align="center">
@@ -30,11 +22,10 @@ Major frameworks/libraries used for this project are:
 
 You can download this project from this repo and set it up locally on you development environment. Get a local copy up and running by following these steps.
    #### Prerequisites
-   List of things you need to use the software and how to install them.
-      * npm
-         ```sh
-         npm install npm@latest -g
-         ```
+   You will need the folloing to run this program successfully
+   - [NodeJs](https://nodejs.org/en/download) v18.i6 or higher
+   - [MySQL DB](https://dev.mysql.com/doc/refman/5.7/en/general-installation-issues.html) v5.7 or higher
+   
    #### Installation
       
       1. Clone the repo
@@ -54,10 +45,14 @@ You can download this project from this repo and set it up locally on you develo
       
       3. Start application
       ```sh
-         npm run start 
+         npm run dev 
       ```
 ## Usage
 
 This space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space.
 
-## Acknowledgments
+## Contributors
+- [Lerato Mthimkhulu](https://github.com/Lerato-Lee)
+- [Dennis Wanjohi](https://github.com/Frenol021)
+- [Seife Shiferaw](https://github.com/siluye)
+- [John Chioma Ugbewi](https://github.com/ugbewijc)
