@@ -21,4 +21,22 @@ const pool  = mysql.createPool({
   database : process.env.DB_NAME
 });
 
-export default pool;
+    /**
+     * runQuery -: runs sql queries for anything related to database
+     * @param {string} sqlQuery, sql statement
+     * @param {array} values, parameter for the statement
+     */
+
+    const runQuery = async (sql, values=[]) =>{
+      return new Promise((resolve, reject) => {
+          pool.query(sql, values, (error, results) => {
+            if (error) {
+              return reject(error);
+            }
+            return resolve(results);
+          });
+      });
+  };
+
+
+export default runQuery;
