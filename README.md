@@ -11,13 +11,6 @@
 
 The project is about creating a web product catalog for MSME (Micro, Small and Medium Enterprises) to showcase their product to their customers. The goal of this project is not to develop another ecommerce application, but to develop web product catalog, which will enable business owners, within the MSME space, can easily upload their products (including product details) and customers can easily view, search and place product orders directly to business owners social media handles/account (starting with Whatsapp)
 
-### Built With
-
-Major frameworks/libraries used for this project are:
-   * [![Nodejs][nodejs.dev]][Node-Js]
-   * [![React][react.js]][React-url]
-   * [mysql.com][MySQL DB]
-
 ## Getting Started
 
 You can download this project from this repo and set it up locally on you development environment. Get a local copy up and running by following these steps.
@@ -43,10 +36,25 @@ You can download this project from this repo and set it up locally on you develo
          npm install
       ```
       
-      3. Start application
+      4. Start application
       ```sh
          npm run dev 
       ```
+      The following evn variables are requried for this project,
+         kindly create .evn file on the project root folder when runing this application locally:
+         1. Database Host
+               DB_HOST
+         2. Database Username
+               DB_USERNAME
+         3. Database name
+               DB_NAME
+         4. Database Password
+               DB_PWD
+         5. Database Port
+               DB_PORT
+         6. Max Image Size for image upload, default is 1MB
+               MAX_IMAGE_SIZE
+
 ## Usage
 
 This space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space.

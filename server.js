@@ -16,13 +16,8 @@ app.use('', index);
 
 const port = process.env.PORT || 3000;
 
-app.use(function (err, req, res, next) {
-  res
-    .status(err.status || 500)
-    .send({ message: err.message, stack: err.stack });
-});
 app.listen(port, () => {
-  console.log(`dev server running on port ${port}`);
+  console.log(`server running on port ${port}`);
 });
 
 export default app;

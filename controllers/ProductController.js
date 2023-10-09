@@ -246,8 +246,8 @@ class ProductController {
              * update the database with the new update
              * 
              */
-              const updateProduct = await ProductModel.updateProduct(product);
-              if(!updateProduct.affectedRows){
+            const updateProduct = await ProductModel.updateProduct(product);
+            if(!updateProduct.affectedRows){
                 throw ("unable to update records")
               }else{
                 return res.status(201).json({data:[
