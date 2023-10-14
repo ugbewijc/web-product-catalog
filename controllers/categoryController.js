@@ -5,7 +5,6 @@
 
 import CategoryModel from "../models/categoryModel.js";
 
-
 class CategoryController{
     constructor(){
     }

@@ -40,8 +40,9 @@ You can download this project from this repo and set it up locally on you develo
       ```sh
          npm run dev 
       ```
+
       The following evn variables are requried for this project,
-         kindly create .evn file on the project root folder when runing this application locally:
+      kindly create .evn file on the project root folder before running this application locally:
          1. Database Host
                DB_HOST
          2. Database Username

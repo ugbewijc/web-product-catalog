@@ -36,6 +36,13 @@ class ProductController {
    *          error message on failure
    */
   static async addProduct(req, res){
+    if (req.headers['content-type'] != "multipart/form-data"){
+      return res.status(400).json({data:[
+        {
+          "error": "Invalid content type"
+        }
+      ]});
+    }
     const imagePath = "./public/images/";
     const imageTypes = ['image/jpeg', 'image/png', 'image/gif'];
     const product = {};
@@ -144,6 +151,13 @@ class ProductController {
    *          error message on failure
    */
   static async updateProduct(req, res){ 
+    if (req.headers['content-type'] != "multipart/form-data"){
+      return res.status(400).json({data:[
+        {
+          "error": "Invalid content type"
+        }
+      ]});
+    }
     const product = {
       "id": req.params? req.params['id']: null
     };
